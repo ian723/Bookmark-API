@@ -1,13 +1,9 @@
 import { Injectable } from "@nestjs/common";
-
+import { PrismaService } from "../prisma/prisma.service";
 
 @Injectable()
 export class AuthService {
-    static signup() {
-        throw new Error("Method not implemented.");
-    }
-
-
+    constructor(private prisma: PrismaService) { }
     signup() {
         return { msg: 'I have signed up' };
     }
