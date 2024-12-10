@@ -1,13 +1,14 @@
 import { Module } from "@nestjs/common";
-import { AuthController } from "./auth.controller";
+import { JwtModule } from "@nestjs/jwt";
+import { JwtStrategy } from "./strategy";
 import { AuthService } from "./auth.service";
-import { PrismaModule } from "../prisma/prisma.module";
+import { AuthController } from "./auth.controller";
 
 
 @Module({
-    imports: [PrismaModule],
+    imports: [JwtModule.register({})],
     controllers: [AuthController],
-    providers: [AuthService],
+    providers: [AuthService, JwtStrategy],
 })
 
 export class AuthModule {}
