@@ -10,7 +10,6 @@ import { PrismaService } from 'src/prisma/prisma.service';
 @Injectable()
 export class JwtStrategy extends PassportStrategy(
   Strategy,
-  'jwt',
 ) {
   constructor(
     config: ConfigService,
