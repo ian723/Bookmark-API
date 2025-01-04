@@ -24,17 +24,3 @@ To create a module in nest,we run
 
 To seed the database, we run ref "https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding"
 > npx prisma db seed
-
-town
-county
-country
-storelocation
-productStore
-productCatables
-order
-store
-storebrand
-user
-product
-subcategory
-category
