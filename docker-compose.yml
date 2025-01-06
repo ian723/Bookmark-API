@@ -21,6 +21,3 @@ services:
       POSTGRES_DB: nest
     networks:
       - nest-network
-
-networks:
-  nest-network:
